@@ -29,9 +29,9 @@
 ```
 +------------------+     +-------------------+     +------------------+
 |                  |     |                   |     |                  |
-|  Web UI (Frontend)|<--->|  API Gateway      |<--->|  Core Services   |
-|  (HTML/JS/CSS)   |     |  (Authentication, |     |  (Storage, Authz, |
-|                  |     |   Routing)        |     |   Monitoring, etc.)|
+| Web UI (Frontend)|<--->|  API Gateway      |<--->|  Core Services   |
+|  (HTML/JS/CSS)   |     |  (Authentication, |     | (Storage, Authz, |
+|                  |     |   Routing)        |     | Monitoring, etc.)|
 +------------------+     +-------------------+     +------------------+
          ^                                                   |
          |                                                   |
@@ -39,7 +39,7 @@
 +-----------------------+                    +-----------------------+
 |                       |                    |                       |
 | Configuration Service |<------------------>|     Database          |
-| (File/DB backed)      |                    | (Metadata, Users, etc.)|
+| (File/DB backed)      |                    |(Metadata, Users, etc.)|
 |                       |                    +-----------------------+
 +-----------------------+
          ^
