@@ -1,0 +1,15 @@
+# Cloud for Save 示例配置
+server:
+  port: 8080
+  mode: debug
+storage:
+  type: local # local | s3
+  local_path: ./data
+  s3:
+    endpoint: ""
+    access_key: ""
+    secret_key: ""
+    bucket: ""
+database:
+  type: sqlite # sqlite | mysql | postgres
+  dsn: "cloud-for-save.db"

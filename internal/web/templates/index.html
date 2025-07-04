@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud for Save 云存储系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Cloud for Save</div>
+        <button class="console-btn" onclick="openConsole()">控制台</button>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <h1>欢迎使用 Cloud for Save</h1>
+            <p>Cloud for Save 是一款现代化、模块化的云存储解决方案，基于 Go 语言开发，支持本地和 S3 兼容存储，具备灵活的权限管理、数据监控、预处理、分享与审计等功能。</p>
+            <ul>
+                <li>多存储后端支持（本地/S3/MinIO）</li>
+                <li>灵活的配置与权限管理</li>
+                <li>Web 管理界面，实时配置与监控</li>
+                <li>数据预处理与事件回调</li>
+                <li>安全的链接分享与访问审计</li>
+            </ul>
+        </section>
+        <section class="about">
+            <h2>项目简介</h2>
+            <p>本项目旨在为企业和个人提供高效、安全、可扩展的数据存储与管理能力。支持通过 Web 控制台动态调整服务配置，所有配置变更均可实时保存并持久化，系统自带默认配置备份，便于一键恢复。</p>
+        </section>
+    </main>
+    <div id="console-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeConsole()">&times;</span>
+            <div id="console-content"></div>
+        </div>
+    </div>
+    <script src="/assets/main.js"></script>
+</body>
+</html>

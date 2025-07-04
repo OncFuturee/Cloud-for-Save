@@ -107,7 +107,7 @@ cloud-for-save/
 │       └── errors.go
 │       └── helpers.go
 ├── pkg/                    # 可复用的公共库
-│   ├── logger/             # 日志工具
+│   ├── logger/             # 日志工具（支持本地日志文件 cloud-for-save.log，记录服务运行、配置变更、错误等信息）
 │   ├── sync/               # 并发工具
 │   └── security/           # 安全相关工具
 ├── scripts/                # 脚本文件 (构建、部署、测试)
